@@ -1,5 +1,5 @@
 # Base image for build
-FROM node:20-alpine AS build
+FROM node:20 AS build
 
 # Create app directory
 WORKDIR /usr/src/app
