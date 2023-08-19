@@ -11,7 +11,7 @@ import { lastValueFrom } from 'rxjs';
 })
 export class ArticleComponent implements OnInit {
   @Input()
-  url: string = 'https://api.blog.anclarma.fr/pages/file/name/blog-angular.md';
+  url = 'https://api.blog.anclarma.fr/pages/file/name/blog-angular.md';
   //TODO a remplacer par un 404 si le nom de l'article n'est pas valid
   param!: string | null;
   data!: string;

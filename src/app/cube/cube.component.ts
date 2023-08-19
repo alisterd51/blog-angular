@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
 import * as THREE from 'three';
 
 @Component({
@@ -6,29 +6,21 @@ import * as THREE from 'three';
   templateUrl: './cube.component.html',
   styleUrls: ['./cube.component.css']
 })
-export class CubeComponent implements OnInit, AfterViewInit {
+export class CubeComponent implements AfterViewInit {
   @ViewChild('canvas')
   private canvasRef!: ElementRef;
 
   // Cube Properties
-  @Input()
-  public rotationSpeedX: number = 0.05;
-  @Input()
-  public rotationSpeedY: number = 0.01;
-  @Input()
-  public size: number = 200;
-  @Input()
-  public texture: string = '/assets/texture.jpeg';
+  @Input() public rotationSpeedX = 0.05;
+  @Input() public rotationSpeedY = 0.01;
+  @Input() public size = 200;
+  @Input() public texture = '/assets/texture.jpeg';
 
   // Stage Properties
-  @Input()
-  public cameraZ: number = 400;
-  @Input()
-  public fieldOfView: number = 1;
-  @Input('nearClipping')
-  public nearClippingPlane: number = 1;
-  @Input('farClipping')
-  public farClippingPlane: number = 1000;
+  @Input() public cameraZ = 400;
+  @Input() public fieldOfView = 1;
+  @Input() public nearClippingPlane = 1;
+  @Input() public farClippingPlane = 1000;
 
   // Helper Properties
   private camera!: THREE.PerspectiveCamera;
@@ -53,7 +45,7 @@ export class CubeComponent implements OnInit, AfterViewInit {
     this.scene.background = new THREE.Color(0x000000);
     this.scene.add(this.cube);
     // Camera
-    let aspectRatio = this.getAspectRatio();
+    const aspectRatio = this.getAspectRatio();
     this.camera = new THREE.PerspectiveCamera(
       this.fieldOfView,
       aspectRatio,
@@ -102,25 +94,21 @@ export class CubeComponent implements OnInit, AfterViewInit {
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas });
     this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
+    this.render();
+  }
 
-    let component: CubeComponent = this;
-    (function render() {
-      requestAnimationFrame(render);
-      component.animateCube();
-      component.moveCube();
-      component.renderer.render(component.scene, component.camera);
-    }());
+  render() {
+    requestAnimationFrame(this.render);
+    this.animateCube();
+    this.moveCube();
+    this.renderer.render(this.scene, this.camera);
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize(event: { target: { innerWidth: number; }; }) {
     this.createScene();
     this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(event.target.innerWidth, event.target.innerWidth / 2);
-  }
-
-  ngOnInit(): void {
-    
   }
 
   ngAfterViewInit(): void {

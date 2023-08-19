@@ -12,7 +12,7 @@ export class MarkdownComponent implements OnInit, AfterViewChecked {
   @Input()
   data = '# Hello World!';
   md!: string;
-  highlighted: boolean = false;
+  highlighted = false;
 
   constructor(private highlightService: HighlightService) {}
 

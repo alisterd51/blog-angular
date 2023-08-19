@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacy-policy.component.css']
 })
 export class PrivacyPolicyComponent {
-  companyName: string = 'anclarma';
-  legalStatus: string = 'NC';
-  registeredAddress: string = 'NC';
-  contactEmailAddress: string = 'antoinereims28@gmail.com';
-  nameResponsible: string = 'NC';
-  responsibleEmailAddress: string = 'NC';
-  lastUpdate: string = '29/05/2023 at 4:42';
+  companyName = 'anclarma';
+  legalStatus = 'NC';
+  registeredAddress = 'NC';
+  contactEmailAddress = 'antoinereims28@gmail.com';
+  nameResponsible = 'NC';
+  responsibleEmailAddress = 'NC';
+  lastUpdate = '29/05/2023 at 4:42';
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ad.component.css']
 })
 export class AdComponent {
-  url: string = 'https://cdn.anclarma.fr/ads.md';
+  url = 'https://cdn.anclarma.fr/ads.md';
 }

@@ -17,14 +17,14 @@ import 'prismjs/components/prism-json';
 import 'prismjs/components/prism-nginx';
 import { isPlatformBrowser } from '@angular/common';
 
-declare var Prism: any;
+declare let Prism: { highlightAll: () => void; };
 
 @Injectable({
   providedIn: 'root'
 })
 export class HighlightService {
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: object) { }
 
   highlightAll() {
     if (isPlatformBrowser(this.platformId)) {
