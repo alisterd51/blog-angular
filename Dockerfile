@@ -26,10 +26,10 @@ FROM nginx:alpine AS production
 WORKDIR /usr/src/app
 
 # Copy a "dist" folder for the production build
-COPY --from=build /usr/src/app/dist/blog_angular /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/blog-angular /usr/share/nginx/html
 
 # Copy nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/blog_angular.conf
+COPY nginx.conf /etc/nginx/conf.d/blog-angular.conf
 
 # expose port
 EXPOSE 4200
