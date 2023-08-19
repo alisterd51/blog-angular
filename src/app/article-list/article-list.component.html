@@ -1,0 +1,4 @@
+<ng-container *ngFor="let article of articleList | async; last as isLast">
+  <app-article-preview [article]="article"></app-article-preview>
+  <span *ngIf="!isLast">&nbsp;</span>
+</ng-container>
