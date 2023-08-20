@@ -98,7 +98,7 @@ export class CubeComponent implements AfterViewInit {
   }
 
   render() {
-    requestAnimationFrame(this.render);
+    requestAnimationFrame(this.render.bind(this));
     this.animateCube();
     this.moveCube();
     this.renderer.render(this.scene, this.camera);
