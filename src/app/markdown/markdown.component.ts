@@ -17,11 +17,7 @@ export class MarkdownComponent implements OnInit, AfterViewChecked {
   constructor(private highlightService: HighlightService) {}
 
   ngOnInit(): void {
-    marked.use(mangle(), {
-      langPrefix: 'language-',
-      //headerIds: null,
-      //headerPrefix: null,
-    });
+    marked.use(mangle());
     this.md = marked(this.data);
   }
 
