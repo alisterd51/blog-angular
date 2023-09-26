@@ -1,5 +1,5 @@
 # Base image for build
-FROM node:20 AS build
+FROM node:18.0.0 AS build
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 # Base image for production
-FROM nginx:alpine AS production
+FROM nginx:1.25-alpine AS production
 
 # Create app directory
 WORKDIR /usr/src/app
