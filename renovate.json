@@ -12,9 +12,9 @@
   "enabledManagers": ["dockerfile", "npm", "github-actions"],
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": false
+      "matchManagers": ["dockerfile"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
     }
   ]
 }
