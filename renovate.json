@@ -13,8 +13,8 @@
   "packageRules": [
     {
       "matchManagers": ["dockerfile"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "enabled": true
     },
     {
       "matchManagers": ["npm"],
@@ -25,7 +25,8 @@
       ],
       "matchUpdateTypes": [
         "patch"
-      ]
+      ],
+      "enabled": true
     }
   ]
 }
