@@ -17,15 +17,10 @@
       "enabled": true
     },
     {
+      "description": "Automatically merge minor and patch level updates",
       "matchManagers": ["npm"],
-      "groupName": "all patch dependencies",
-      "groupSlug": "all-patch",
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true,
       "enabled": true
     }
   ]
