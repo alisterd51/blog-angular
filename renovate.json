@@ -9,6 +9,7 @@
     ":disableRateLimiting",
     ":rebaseStalePrs"
   ],
+  "separateMinorPatch": true,
   "enabledManagers": ["dockerfile", "npm", "github-actions"],
   "packageRules": [
     {
