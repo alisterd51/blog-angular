@@ -9,8 +9,13 @@
     ":disableRateLimiting",
     ":rebaseStalePrs"
   ],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": true,
+    "assignees": ["@alisterd51"]
+  },
   "separateMinorPatch": true,
-  "enabledManagers": ["dockerfile", "npm", "github-actions"],
+  "enabledManagers": ["dockerfile", "npm", "github-actions", "regex"],
   "packageRules": [
     {
       "matchManagers": ["dockerfile"],
@@ -26,6 +31,32 @@
       "matchCurrentVersion": "!/^0/",
       "automerge": true,
       "enabled": true
+    },
+    {
+      "description": "Automatically merge minor and patch level updates",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "enabled": true
+    },
+    {
+      "description": "Automatically merge minor and patch level updates",
+      "matchManagers": ["regex"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "enabled": true
+    }
+  ],
+  "customManagers": [
+    {
+      "description": "Update semantic-release version used by npx",
+      "customType": "regex",
+      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+      "matchStrings": ["\\srun: npx semantic-release@(?<currentValue>.*?)\\s"],
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "semantic-release"
     }
   ]
 }
