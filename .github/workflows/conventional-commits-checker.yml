@@ -1,6 +1,7 @@
-name: Conventional commitses
+name: Conventional commits
 
-on: [pull_request, push]
+on:
+  pull_request: {}
 
 jobs:
   conventional-commits-checker:
