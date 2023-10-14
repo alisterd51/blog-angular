@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Base image for production
-FROM nginx:1.25-alpine AS production
+FROM nginx:1.25.2-alpine3.18-slim AS production
 
 # Create app directory
 WORKDIR /usr/src/app
