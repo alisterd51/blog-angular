@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build --omit=dev
 
 # Base image for production
-FROM nginx:1.25.2-alpine3.18-slim AS production
+FROM nginx:1.25.3-alpine3.18-slim AS production
 
 # Copy a "dist" folder for the production build
 COPY --from=build /usr/src/app/dist/blog-angular /usr/share/nginx/html
