@@ -1,5 +1,5 @@
 # Base image for build
-FROM node:20.9.0 AS build
+FROM node:21.1.0 AS build
 
 # Create app directory
 WORKDIR /usr/src/app
