@@ -27,7 +27,7 @@
     "@angular/router": "^17.0.1",
     "@angular/service-worker": "^17.0.1",
     "@ng-icons/bootstrap-icons": "^26.0.0",
-    "@ng-icons/core": "^25.2.0",
+    "@ng-icons/core": "^26.0.0",
     "@types/marked": "^5.0.1",
     "@types/three": "^0.158.0",
     "marked": "^9.0.3",
