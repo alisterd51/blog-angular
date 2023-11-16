@@ -1,7 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabled": true,
-  "baseBranches": ["master"],
+  "baseBranches": [
+    "master"
+  ],
   "commitMessageSuffix": "({{updateType}})",
   "extends": [
     "config:best-practices",
@@ -10,21 +12,37 @@
     ":rebaseStalePrs"
   ],
   "vulnerabilityAlerts": {
-    "labels": ["security"],
+    "labels": [
+      "security"
+    ],
     "automerge": true,
-    "assignees": ["@alisterd51"]
+    "assignees": [
+      "@alisterd51"
+    ]
   },
   "separateMinorPatch": true,
-  "enabledManagers": ["dockerfile", "npm", "github-actions", "regex"],
+  "enabledManagers": [
+    "dockerfile",
+    "npm",
+    "github-actions",
+    "custom.regex"
+  ],
   "packageRules": [
     {
       "description": "Automatically merge minor and patch level updates",
-      "matchUpdateTypes": ["patch", "pin", "pinDigest", "digest"],
+      "matchUpdateTypes": [
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest"
+      ],
       "automerge": true
     },
     {
       "description": "Automatically merge minor and patch level updates",
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": [
+        "minor"
+      ],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
     }
@@ -33,8 +51,12 @@
     {
       "description": "Update semantic-release version used by npx",
       "customType": "regex",
-      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-      "matchStrings": ["\\srun: npx semantic-release@(?<currentValue>.*?)\\s"],
+      "fileMatch": [
+        "^\\.github/workflows/[^/]+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "\\srun: npx semantic-release@(?<currentValue>.*?)\\s"
+      ],
       "datasourceTemplate": "npm",
       "depNameTemplate": "semantic-release"
     }
