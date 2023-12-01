@@ -16,9 +16,9 @@ export class MarkdownComponent implements OnInit, AfterViewChecked {
 
   constructor(private highlightService: HighlightService) {}
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     marked.use(mangle());
-    this.md = marked(this.data);
+    this.md = await marked(this.data);
   }
 
   ngAfterViewChecked(): void {
