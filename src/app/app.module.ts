@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdComponent } from './ad/ad.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticlePreviewComponent } from './article-preview/article-preview.component';
@@ -31,7 +30,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 @NgModule({
   declarations: [
     AppComponent,
-    AdComponent,
     ArticleComponent,
     ArticleListComponent,
     ArticlePreviewComponent,
