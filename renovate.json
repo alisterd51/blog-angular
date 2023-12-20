@@ -9,7 +9,8 @@
     "config:best-practices",
     "default:semanticCommits",
     ":disableRateLimiting",
-    ":rebaseStalePrs"
+    ":rebaseStalePrs",
+    "replacement:all"
   ],
   "vulnerabilityAlerts": {
     "labels": [
