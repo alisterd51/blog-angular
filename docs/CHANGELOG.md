@@ -1,3 +1,10 @@
+## [3.4.2](https://github.com/alisterd51/blog-angular/compare/v3.4.1...v3.4.2) (2024-01-04)
+
+
+### Bug Fixes
+
+* **changelog:** regenerate changelog file ([8014119](https://github.com/alisterd51/blog-angular/commit/801411998b86073804b18c3d85d6ab9564c52854))
+
 ## [3.4.1](https://github.com/alisterd51/blog-angular/compare/v3.4.0...v3.4.1) (2024-01-03)
 
 
@@ -609,6 +616,3 @@
 
 * **renovate:** test ([6d62892](https://github.com/alisterd51/blog-angular/commit/6d628928e3bbd3309c5135c8c44a45988eff00c3))
 * **renovate:** update config ([9db6d89](https://github.com/alisterd51/blog-angular/commit/9db6d8927a15158745efc3889c1efcdbe02f795b))
-
-
-
