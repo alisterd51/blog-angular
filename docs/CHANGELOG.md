@@ -1,3 +1,10 @@
+## [3.4.3](https://github.com/alisterd51/blog-angular/compare/v3.4.2...v3.4.3) (2024-01-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** update npm version ([3cddddb](https://github.com/alisterd51/blog-angular/commit/3cddddbb9a495d737cc9ae53cfe99dcb5e111fff))
+
 ## [3.4.2](https://github.com/alisterd51/blog-angular/compare/v3.4.1...v3.4.2) (2024-01-04)
 
 
