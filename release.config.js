@@ -11,10 +11,18 @@ module.exports = {
     ],
     "@semantic-release/github",
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "npm version --no-git-tag-version ${nextRelease.version}"
+      }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": [
-          "docs/CHANGELOG.md"
+          "docs/CHANGELOG.md",
+          "package.json",
+          "package-lock.json"
         ]
       }
     ]
