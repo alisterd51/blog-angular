@@ -1,3 +1,10 @@
+## [3.4.4](https://github.com/alisterd51/blog-angular/compare/v3.4.3...v3.4.4) (2024-01-06)
+
+
+### Bug Fixes
+
+* update api url ([2c00bf6](https://github.com/alisterd51/blog-angular/commit/2c00bf67c25b56c52bba8d2692ce777208c0980a))
+
 ## [3.4.3](https://github.com/alisterd51/blog-angular/compare/v3.4.2...v3.4.3) (2024-01-04)
 
 
