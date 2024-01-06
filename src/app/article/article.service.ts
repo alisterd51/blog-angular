@@ -17,10 +17,10 @@ export class ArticleService {
   }
 
   getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>('https://api.blog.anclarma.fr/pages');
+    return this.http.get<Article[]>('https://api.anclarma.fr/pages');
   }
 
   getArticle(name: string): Observable<Article> {
-    return this.http.get<Article>('https://api.blog.anclarma.fr/pages/name/' + name);
+    return this.http.get<Article>('https://api.anclarma.fr/pages/name/' + name);
   }
 }
