@@ -11,7 +11,7 @@ import { lastValueFrom } from 'rxjs';
 })
 export class ArticleComponent implements OnInit {
   @Input()
-  url = 'https://api.blog.anclarma.fr/pages/file/name/blog-angular.md';
+  url = 'https://api.anclarma.fr/pages/file/name/blog-angular.md';
   //TODO a remplacer par un 404 si le nom de l'article n'est pas valid
   param!: string | null;
   data!: string;
@@ -26,7 +26,7 @@ export class ArticleComponent implements OnInit {
     if (this.param === null) {
       this.download();
     } else {
-      this.url = 'https://api.blog.anclarma.fr/pages/file/name/' + this.param;
+      this.url = 'https://api.anclarma.fr/pages/file/name/' + this.param;
       this.download();
     }
   }
