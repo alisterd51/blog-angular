@@ -1,3 +1,10 @@
+## [3.4.5](https://github.com/alisterd51/blog-angular/compare/v3.4.4...v3.4.5) (2024-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency zone.js to v0.14.3 (patch) ([6f27fa3](https://github.com/alisterd51/blog-angular/commit/6f27fa3f0b9d5e30eb17959bdbd916a85502f465))
+
 ## [3.4.4](https://github.com/alisterd51/blog-angular/compare/v3.4.3...v3.4.4) (2024-01-06)
 
 
