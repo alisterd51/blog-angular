@@ -1,3 +1,10 @@
+## [3.4.13](https://github.com/alisterd51/blog-angular/compare/v3.4.12...v3.4.13) (2024-01-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @angular/material to v17.1.1 (patch) ([a264c59](https://github.com/alisterd51/blog-angular/commit/a264c5936482ad0012c281279ec669877b65812d))
+
 ## [3.4.12](https://github.com/alisterd51/blog-angular/compare/v3.4.11...v3.4.12) (2024-01-25)
 
 
