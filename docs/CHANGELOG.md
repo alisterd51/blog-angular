@@ -1,3 +1,10 @@
+## [3.4.14](https://github.com/alisterd51/blog-angular/compare/v3.4.13...v3.4.14) (2024-01-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v11.2.0 (minor) ([5f4be2d](https://github.com/alisterd51/blog-angular/commit/5f4be2dd20c60344d35234b9a232f5e97d44bcfd))
+
 ## [3.4.13](https://github.com/alisterd51/blog-angular/compare/v3.4.12...v3.4.13) (2024-01-25)
 
 
