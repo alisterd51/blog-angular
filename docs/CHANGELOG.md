@@ -1,3 +1,10 @@
+## [3.4.18](https://github.com/alisterd51/blog-angular/compare/v3.4.17...v3.4.18) (2024-02-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked-mangle to v1.1.7 (patch) ([ca2096b](https://github.com/alisterd51/blog-angular/commit/ca2096b3e8e8eed48988fd58365dddd4d1d2cd79))
+
 ## [3.4.17](https://github.com/alisterd51/blog-angular/compare/v3.4.16...v3.4.17) (2024-02-01)
 
 
