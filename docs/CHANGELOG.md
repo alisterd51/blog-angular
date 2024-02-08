@@ -1,3 +1,10 @@
+## [3.4.19](https://github.com/alisterd51/blog-angular/compare/v3.4.18...v3.4.19) (2024-02-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v12 (major) ([ac4cd39](https://github.com/alisterd51/blog-angular/commit/ac4cd3935442c56918417bc42642a08d51b933b0))
+
 ## [3.4.18](https://github.com/alisterd51/blog-angular/compare/v3.4.17...v3.4.18) (2024-02-06)
 
 
