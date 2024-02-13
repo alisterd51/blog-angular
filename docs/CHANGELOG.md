@@ -1,3 +1,10 @@
+## [3.4.24](https://github.com/alisterd51/blog-angular/compare/v3.4.23...v3.4.24) (2024-02-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @ng-icons/bootstrap-icons to v26.5.0 (minor) ([3c7070e](https://github.com/alisterd51/blog-angular/commit/3c7070eda67938ed7abcde133b582414062c5f3b))
+
 ## [3.4.23](https://github.com/alisterd51/blog-angular/compare/v3.4.22...v3.4.23) (2024-02-13)
 
 
