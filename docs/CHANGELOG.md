@@ -1,3 +1,10 @@
+## [3.4.38](https://github.com/alisterd51/blog-angular/compare/v3.4.37...v3.4.38) (2024-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update angularmaterial monorepo to v17.2.2 (patch) ([a556b82](https://github.com/alisterd51/blog-angular/commit/a556b82c41dc38dfec09b57337755422ba1ed075))
+
 ## [3.4.37](https://github.com/alisterd51/blog-angular/compare/v3.4.36...v3.4.37) (2024-03-06)
 
 
