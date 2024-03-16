@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build --omit=dev
 
 # Base image for production
-FROM nginx:1.25.4-alpine3.18-slim@sha256:3d819042aa3b1f8eef5f1d923d3f34c287e43dc7e6b4dac3bbdfe018265932c8 AS production
+FROM nginx:1.25.4-alpine3.18-slim@sha256:7170d29ee1275b1f12b4cb1dd2a98e5b9473766151dba6615844f19684080b8e AS production
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/blog-angular.conf
