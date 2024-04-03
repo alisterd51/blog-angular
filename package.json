@@ -51,7 +51,7 @@
     "@types/three": "0.162.0",
     "@typescript-eslint/eslint-plugin": "7.4.0",
     "@typescript-eslint/parser": "7.4.0",
-    "cypress": "13.7.1",
+    "cypress": "13.7.2",
     "eslint": "8.57.0",
     "jasmine-core": "5.1.2",
     "karma": "6.4.3",
