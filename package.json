@@ -1,6 +1,6 @@
 {
   "name": "blog-angular",
-  "version": "3.4.55",
+  "version": "3.4.56",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
