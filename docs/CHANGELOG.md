@@ -1,3 +1,10 @@
+## [3.4.58](https://github.com/alisterd51/blog-angular/compare/v3.4.57...v3.4.58) (2024-04-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v12.0.2 (patch) ([480271e](https://github.com/alisterd51/blog-angular/commit/480271e87cf0e7c332bc788bb7688d01fe731fc6))
+
 ## [3.4.57](https://github.com/alisterd51/blog-angular/compare/v3.4.56...v3.4.57) (2024-04-19)
 
 
