@@ -1,3 +1,10 @@
+## [3.4.61](https://github.com/alisterd51/blog-angular/compare/v3.4.60...v3.4.61) (2024-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency three to ^0.164.0 (minor) ([9c986c9](https://github.com/alisterd51/blog-angular/commit/9c986c9bcf9624198c035a11925c9d36693275b0))
+
 ## [3.4.60](https://github.com/alisterd51/blog-angular/compare/v3.4.59...v3.4.60) (2024-04-27)
 
 
