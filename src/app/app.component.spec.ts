@@ -25,6 +25,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('footer')?.textContent).toContain(' © 2023 anclarma ');
+    expect(compiled.querySelector('footer')?.textContent).toContain(' © 2024 anclarma ');
   });
 });
