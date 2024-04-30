@@ -1,3 +1,10 @@
+## [3.4.62](https://github.com/alisterd51/blog-angular/compare/v3.4.61...v3.4.62) (2024-04-30)
+
+
+### Bug Fixes
+
+* update github link ([e4054fe](https://github.com/alisterd51/blog-angular/commit/e4054fe4988e8619d24fd3e64beb4939bf8a05c2))
+
 ## [3.4.61](https://github.com/alisterd51/blog-angular/compare/v3.4.60...v3.4.61) (2024-04-30)
 
 
