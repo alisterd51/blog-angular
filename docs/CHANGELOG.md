@@ -1,3 +1,10 @@
+## [3.4.69](https://github.com/alisterd51/blog-angular/compare/v3.4.68...v3.4.69) (2024-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @ng-icons/core to v27.4.0 (minor) ([916f529](https://github.com/alisterd51/blog-angular/commit/916f5290cee415388db7203426f041d78d5ec8a5))
+
 ## [3.4.68](https://github.com/alisterd51/blog-angular/compare/v3.4.67...v3.4.68) (2024-05-09)
 
 
