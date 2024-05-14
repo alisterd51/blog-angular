@@ -1,3 +1,10 @@
+## [3.4.70](https://github.com/alisterd51/blog-angular/compare/v3.4.69...v3.4.70) (2024-05-14)
+
+
+### Bug Fixes
+
+* **deps:** update nodejs to 22 ([ff984c6](https://github.com/alisterd51/blog-angular/commit/ff984c65cc28b7bc8c4d549f1381c84d28ac5371))
+
 ## [3.4.69](https://github.com/alisterd51/blog-angular/compare/v3.4.68...v3.4.69) (2024-05-09)
 
 
