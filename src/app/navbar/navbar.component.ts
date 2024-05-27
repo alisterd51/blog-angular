@@ -1,25 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-
+import { Component } from '@angular/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule, RouterModule],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrl: './navbar.component.css'
 })
-export class NavbarComponent implements OnInit {
-  small = false;
+export class NavbarComponent {
 
-  constructor(private responsive: BreakpointObserver) {}
-
-  ngOnInit(): void {
-    this.responsive.observe([
-      Breakpoints.XSmall])
-      .subscribe((result) => {
-        this.small = false;
-        if (result.matches) {
-          this.small = true;
-        }
-      });
-  }
 }

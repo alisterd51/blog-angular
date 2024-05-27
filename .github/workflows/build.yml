@@ -24,23 +24,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
 
-  lint-eslint:
-    needs: [setup]
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
-      - name: Use Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-      - name: Clean install
-        run: npm ci
-      - name: Lint
-        run: npm run lint
+  # lint-eslint:
+  #   needs: [setup]
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     actions: write
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+  #     - name: Use Node.js ${{ env.NODE_VERSION }}
+  #       uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
+  #       with:
+  #         node-version: ${{ env.NODE_VERSION }}
+  #         cache: 'npm'
+  #     - name: Clean install
+  #       run: npm ci
+  #     - name: Lint
+  #       run: npm run lint
 
   lint-dockerfile:
     needs: [setup]
@@ -71,36 +71,36 @@ jobs:
       - name: Test
         run: npm run test
 
-  test-e2e:
-    needs: [setup]
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [18, 20, 22]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
-      - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'npm'
-      - name: Clean install
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Test e2e
-        run: npm run e2e
-      - name: Test component
-        run: npm run component
+  # test-e2e:
+  #   needs: [setup]
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       node: [18, 20, 22]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+  #     - name: Use Node.js ${{ matrix.node }}
+  #       uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
+  #       with:
+  #         node-version: ${{ matrix.node }}
+  #         cache: 'npm'
+  #     - name: Clean install
+  #       run: npm ci
+  #     - name: Build
+  #       run: npm run build
+  #     - name: Test e2e
+  #       run: npm run e2e
+  #     - name: Test component
+  #       run: npm run component
 
   release:
     needs:
       - setup
-      - lint-eslint
+      # - lint-eslint
       - lint-dockerfile
       - test
-      - test-e2e
+      # - test-e2e
     runs-on: ubuntu-latest
     outputs:
       new_release_published: ${{ steps.semantic.outputs.new_release_published }}

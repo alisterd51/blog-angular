@@ -1,1 +1,3 @@
-<p *ngIf="data"><app-markdown [data]="data"></app-markdown></p>
+@if (data) {
+  <app-markdown [data]="data" />
+}

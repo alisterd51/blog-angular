@@ -1,72 +1,25 @@
 <mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <a mat-icon-button routerLink="/">
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-    </a>
-    <div *ngIf="!small">
-      <button mat-button [matMenuTriggerFor]="sevicesMenu">Services</button>
-      <button mat-button [matMenuTriggerFor]="pagesMenu">Pages</button>
-      <button mat-button [matMenuTriggerFor]="portfolioMenu">Portfolio</button>
-      <button mat-button [matMenuTriggerFor]="favoriteSitesMenu">
-        Mes sites favoris
-      </button>
-    </div>
-    <div *ngIf="small">
-      <button mat-icon-button [matMenuTriggerFor]="smallMenu" aria-label="More">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-    </div>
-  </mat-toolbar-row>
+  <button mat-icon-button routerLink="/">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-button [matMenuTriggerFor]="sevicesMenu">Services</button>
+  <button mat-button [matMenuTriggerFor]="pagesMenu">Pages</button>
+  <button mat-button [matMenuTriggerFor]="favoriteSitesMenu">Mes sites favoris</button>
 </mat-toolbar>
 
-<mat-menu #smallMenu="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="sevicesMenu">Services</button>
-  <button mat-menu-item [matMenuTriggerFor]="pagesMenu">Pages</button>
-  <button mat-menu-item [matMenuTriggerFor]="portfolioMenu">Portfolio</button>
-  <button mat-menu-item [matMenuTriggerFor]="favoriteSitesMenu">
-    Mes sites favoris
-  </button>
-</mat-menu>
-
 <mat-menu #sevicesMenu="matMenu">
-  <a mat-menu-item href="https://game.anclarma.fr"> emulatorjs </a>
-  <a mat-menu-item href="https://blog.anclarma.fr"> blog angular </a>
-  <a mat-menu-item href="https://gitea.anclarma.fr"> gitea </a>
-  <a mat-menu-item href="https://plex.anclarma.fr"> plex </a>
-  <a mat-menu-item href="https://portfolio.anclarma.fr">
-    portfolio ruby on rails
-  </a>
-  <a mat-menu-item href="https://wordpress.anclarma.fr"> wordpress </a>
+  <a mat-menu-item href="https://game.anclarma.fr">emulatorjs</a>
+  <a mat-menu-item href="https://gitea.anclarma.fr">gitea</a>
+  <a mat-menu-item href="https://plex.anclarma.fr">plex</a>
+  <a mat-menu-item href="https://wordpress.anclarma.fr">wordpress</a>
 </mat-menu>
 
 <mat-menu #pagesMenu="matMenu">
   <a mat-menu-item routerLink="/article">Article</a>
-  <a mat-menu-item routerLink="/cube">Cube</a>
-  <a mat-menu-item routerLink="/tetris">Tetris</a>
-</mat-menu>
-
-<mat-menu #portfolioMenu="matMenu">
-  <a mat-menu-item>Angular</a>
-  <a mat-menu-item>Bash</a>
-  <a mat-menu-item>C</a>
-  <a mat-menu-item>C++</a>
-  <a mat-menu-item>Docker</a>
-  <a mat-menu-item>Go</a>
-  <a mat-menu-item>HTML/CSS</a>
-  <a mat-menu-item>Kubernetes</a>
-  <a mat-menu-item>Nestjs</a>
-  <a mat-menu-item>Python</a>
-  <a mat-menu-item>Rust</a>
 </mat-menu>
 
 <mat-menu #favoriteSitesMenu="matMenu">
-  <a mat-menu-item href="https://www.jonathandupre.fr/">
-    La taverne de John-John
-  </a>
-  <a mat-menu-item href="https://www.commitstrip.com/">
-    CommitStrip
-  </a>
-  <a mat-menu-item href="https://lesjoiesducode.fr/">
-    Les Joies du Code
-  </a>
+  <a mat-menu-item href="https://www.jonathandupre.fr/">La taverne de John-John</a>
+  <a mat-menu-item href="https://www.commitstrip.com/">CommitStrip</a>
+  <a mat-menu-item href="https://lesjoiesducode.fr/">Les Joies du Code</a>
 </mat-menu>

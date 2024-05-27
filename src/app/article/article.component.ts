@@ -1,19 +1,20 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ArticleService } from './article.service';
 import { ActivatedRoute } from '@angular/router';
+import { ArticleService } from './article.service';
 import { lastValueFrom } from 'rxjs';
+import { MarkdownComponent } from '../markdown/markdown.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-article',
+  standalone: true,
+  imports: [MarkdownComponent],
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.css'],
-  providers: [ArticleService],
+  styleUrl: './article.component.css'
 })
 export class ArticleComponent implements OnInit {
   @Input()
-  url = 'https://api.anclarma.fr/pages/file/name/blog-angular.md';
-  //TODO a remplacer par un 404 si le nom de l'article n'est pas valid
-  param!: string | null;
+  name!: string;
   data!: string;
 
   constructor(
@@ -22,19 +23,19 @@ export class ArticleComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.param = this.route.snapshot.paramMap.get('name');
-    if (this.param === null) {
+    let param = this.route.snapshot.paramMap.get('name');
+    if (param === null) {
       this.download();
     } else {
-      this.url = 'https://api.anclarma.fr/pages/file/name/' + this.param;
+      this.name = param;
       this.download();
     }
   }
 
   async download() {
     this.data = await lastValueFrom(
-      this.articleService.getMarkdown(this.url),
-      { defaultValue: 'Failed to download the article [' + this.url + '](' + this.url + ')' }
-    );
+      this.articleService.getMarkdown(this.name),
+      { defaultValue: 'Failed to download the article ' + this.name }
+    )
   }
 }

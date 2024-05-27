@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Article } from './article';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Article } from './article';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,15 +13,15 @@ export class ArticleService {
     private http: HttpClient
   ) { }
 
-  getMarkdown(url: string) {
-    return this.http.get(url, {responseType: 'text'});
+  getMarkdown(name: string): Observable<string> {
+    return this.http.get(environment.apiLink + '/pages/file/name/' + name, {responseType: 'text'});
   }
 
   getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>('https://api.anclarma.fr/pages');
+    return this.http.get<Article[]>(environment.apiLink + '/pages');
   }
 
   getArticle(name: string): Observable<Article> {
-    return this.http.get<Article>('https://api.anclarma.fr/pages/name/' + name);
+    return this.http.get<Article>(environment.apiLink + '/pages/name/' + name);
   }
 }
