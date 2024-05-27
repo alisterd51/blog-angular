@@ -1,4 +1,4 @@
-<ng-container *ngFor="let article of articleList | async; last as isLast">
+@for (article of articles; track article; let last = $last) {
   <app-article-preview [article]="article"></app-article-preview>
-  <span *ngIf="!isLast">&nbsp;</span>
-</ng-container>
+  <span>&nbsp;</span>
+}
