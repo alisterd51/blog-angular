@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/alisterd51/blog-angular/compare/v4.0.1...v4.0.2) (2024-05-28)
+
+
+### Bug Fixes
+
+* **dockerfile:** use nginx-unprivileged ([cceae30](https://github.com/alisterd51/blog-angular/commit/cceae309cc27ec00ebdcd1fda1c7b064b5e37828))
+
 ## [4.0.1](https://github.com/alisterd51/blog-angular/compare/v4.0.0...v4.0.1) (2024-05-28)
 
 
