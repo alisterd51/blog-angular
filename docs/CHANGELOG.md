@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/alisterd51/blog-angular/compare/v3.4.78...v4.0.0) (2024-05-28)
+
+
+### chore
+
+* upgrade to angular v18 ([d6abe62](https://github.com/alisterd51/blog-angular/commit/d6abe623211157fbe301aa5b4f3bb6cb7b470791))
+
+
+### BREAKING CHANGES
+
+* rewrite all files and remove lint and e2e
+
 ## [3.4.78](https://github.com/alisterd51/blog-angular/compare/v3.4.77...v3.4.78) (2024-05-27)
 
 
