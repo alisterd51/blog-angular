@@ -23,4 +23,4 @@ FROM nginx:1.25.4-alpine3.18-slim@sha256:b841779b72c127bdcb6e58b2ae3d810f890e020
 COPY nginx.conf /etc/nginx/conf.d/blog-angular.conf
 
 # Copy a "dist" folder for the production build
-COPY --from=build /usr/src/app/dist/blog-angular /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/blog-angular/browser /usr/share/nginx/html
