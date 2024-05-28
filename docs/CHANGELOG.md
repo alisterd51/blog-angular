@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/alisterd51/blog-angular/compare/v4.0.0...v4.0.1) (2024-05-28)
+
+
+### Bug Fixes
+
+* **dockerfile:** fix copy dist files ([0316a48](https://github.com/alisterd51/blog-angular/commit/0316a482e528306efd66d4911d02e1b779ee4486))
+
 # [4.0.0](https://github.com/alisterd51/blog-angular/compare/v3.4.78...v4.0.0) (2024-05-28)
 
 
