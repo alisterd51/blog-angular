@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/alisterd51/blog-angular/compare/v4.0.2...v4.0.3) (2024-05-28)
+
+
+### Bug Fixes
+
+* update icons path ([3897036](https://github.com/alisterd51/blog-angular/commit/3897036efdde0209f0c78c669a35011921b48aad))
+
 ## [4.0.2](https://github.com/alisterd51/blog-angular/compare/v4.0.1...v4.0.2) (2024-05-28)
 
 
