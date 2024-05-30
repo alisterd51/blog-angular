@@ -20,7 +20,7 @@ RUN npm run build --omit=dev
 FROM nginxinc/nginx-unprivileged:1.26.0-alpine3.19-slim@sha256:9d742a6544a066f7a7f66e937a62e63974af477a58fa923dae96564c776e8180 AS production
 
 # Copy nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/blog-angular.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy a "dist" folder for the production build
 COPY --from=build /usr/src/app/dist/blog-angular/browser /usr/share/nginx/html
