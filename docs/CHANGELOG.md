@@ -1,3 +1,10 @@
+## [4.0.6](https://github.com/alisterd51/blog-angular/compare/v4.0.5...v4.0.6) (2024-05-30)
+
+
+### Bug Fixes
+
+* **dockerfile:** update nginx conf ([0eff7ff](https://github.com/alisterd51/blog-angular/commit/0eff7fff7592706abbfc583c6e2a74a27e3279d3))
+
 ## [4.0.5](https://github.com/alisterd51/blog-angular/compare/v4.0.4...v4.0.5) (2024-05-30)
 
 
