@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { ArticleService } from './article.service';
 import { lastValueFrom } from 'rxjs';
 import { MarkdownComponent } from '../markdown/markdown.component';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-article',
@@ -23,7 +22,7 @@ export class ArticleComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    let param = this.route.snapshot.paramMap.get('name');
+    const param = this.route.snapshot.paramMap.get('name');
     if (param === null) {
       this.download();
     } else {
