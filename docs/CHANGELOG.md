@@ -1,3 +1,10 @@
+## [4.0.7](https://github.com/alisterd51/blog-angular/compare/v4.0.6...v4.0.7) (2024-06-01)
+
+
+### Bug Fixes
+
+* **ci:** enable lint job ([fdcfa2a](https://github.com/alisterd51/blog-angular/commit/fdcfa2a9f41df8ed9ad62ba2cc2e02a5935e01c4))
+
 ## [4.0.6](https://github.com/alisterd51/blog-angular/compare/v4.0.5...v4.0.6) (2024-05-30)
 
 
