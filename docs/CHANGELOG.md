@@ -1,3 +1,10 @@
+## [4.0.11](https://github.com/alisterd51/blog-angular/compare/v4.0.10...v4.0.11) (2024-06-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency zone.js to v0.14.7 (patch) ([ef50821](https://github.com/alisterd51/blog-angular/commit/ef508217785bb612929e7dc51a85b43a66c325e3))
+
 ## [4.0.10](https://github.com/alisterd51/blog-angular/compare/v4.0.9...v4.0.10) (2024-06-06)
 
 
