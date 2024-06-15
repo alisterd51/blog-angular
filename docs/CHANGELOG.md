@@ -1,3 +1,10 @@
+## [4.0.15](https://github.com/alisterd51/blog-angular/compare/v4.0.14...v4.0.15) (2024-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v13 (major) ([3035880](https://github.com/alisterd51/blog-angular/commit/3035880440b71ca97c655cfcfe0c2143cff72e73))
+
 ## [4.0.14](https://github.com/alisterd51/blog-angular/compare/v4.0.13...v4.0.14) (2024-06-15)
 
 
