@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build --omit=dev
 
 # Base image for production
-FROM nginxinc/nginx-unprivileged:1.27.0-alpine3.19-slim@sha256:0e78e8e98317a026210ca388234d4b2195adf2bc756f8ff932d87de607fd9ef1 AS production
+FROM nginxinc/nginx-unprivileged:1.27.0-alpine3.19-slim@sha256:de6ddde5c469a798004f3659bd694194171c118e6c513ebbb517178751abbe78 AS production
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
