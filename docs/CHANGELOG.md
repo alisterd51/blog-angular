@@ -1,3 +1,10 @@
+## [4.0.30](https://github.com/alisterd51/blog-angular/compare/v4.0.29...v4.0.30) (2024-07-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v13.0.3 (patch) ([ca2ae21](https://github.com/alisterd51/blog-angular/commit/ca2ae21b4adf0a10e09d6ebb01823e22561d4d75))
+
 ## [4.0.29](https://github.com/alisterd51/blog-angular/compare/v4.0.28...v4.0.29) (2024-07-25)
 
 
