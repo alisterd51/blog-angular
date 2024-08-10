@@ -1,3 +1,10 @@
+## [4.0.34](https://github.com/alisterd51/blog-angular/compare/v4.0.33...v4.0.34) (2024-08-10)
+
+
+### Bug Fixes
+
+* **deps:** update angular monorepo to v18.1.4 (patch) ([3bf9ee2](https://github.com/alisterd51/blog-angular/commit/3bf9ee2187337b9a9d81345fa405b934b6f801c4))
+
 ## [4.0.33](https://github.com/alisterd51/blog-angular/compare/v4.0.32...v4.0.33) (2024-08-05)
 
 
