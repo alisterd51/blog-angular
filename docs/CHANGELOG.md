@@ -1,3 +1,10 @@
+## [4.0.42](https://github.com/alisterd51/blog-angular/compare/v4.0.41...v4.0.42) (2024-08-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tslib to v2.7.0 (minor) ([ae5daec](https://github.com/alisterd51/blog-angular/commit/ae5daecdf78a06b21173ada3b55e692a2d6a70b7))
+
 ## [4.0.41](https://github.com/alisterd51/blog-angular/compare/v4.0.40...v4.0.41) (2024-08-22)
 
 
