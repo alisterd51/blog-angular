@@ -1,3 +1,10 @@
+## [4.0.46](https://github.com/alisterd51/blog-angular/compare/v4.0.45...v4.0.46) (2024-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update angularmaterial monorepo to v18.2.3 (patch) ([9c6cc8e](https://github.com/alisterd51/blog-angular/commit/9c6cc8e925d245af58ab435647e8749548e2b6f7))
+
 ## [4.0.45](https://github.com/alisterd51/blog-angular/compare/v4.0.44...v4.0.45) (2024-09-04)
 
 
