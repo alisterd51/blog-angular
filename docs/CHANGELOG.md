@@ -1,3 +1,10 @@
+## [4.0.64](https://github.com/alisterd51/blog-angular/compare/v4.0.63...v4.0.64) (2024-11-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tslib to v2.8.1 (patch) ([71c1ac3](https://github.com/alisterd51/blog-angular/commit/71c1ac3f97112c5d7c444c5ddfc9187288cbb034))
+
 ## [4.0.63](https://github.com/alisterd51/blog-angular/compare/v4.0.62...v4.0.63) (2024-10-31)
 
 
