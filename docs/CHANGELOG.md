@@ -1,3 +1,10 @@
+## [4.0.67](https://github.com/alisterd51/blog-angular/compare/v4.0.66...v4.0.67) (2024-11-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked to v14.1.4 (patch) ([#646](https://github.com/alisterd51/blog-angular/issues/646)) ([e600932](https://github.com/alisterd51/blog-angular/commit/e6009329bd27df181505484d7be85746a093f8c6))
+
 ## [4.0.66](https://github.com/alisterd51/blog-angular/compare/v4.0.65...v4.0.66) (2024-11-07)
 
 
