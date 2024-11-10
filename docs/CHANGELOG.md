@@ -1,3 +1,10 @@
+## [4.0.68](https://github.com/alisterd51/blog-angular/compare/v4.0.67...v4.0.68) (2024-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency marked-mangle to v1.1.10 (patch) ([#647](https://github.com/alisterd51/blog-angular/issues/647)) ([29034ad](https://github.com/alisterd51/blog-angular/commit/29034adf012557e0f89657cab37cb33f9139e7af))
+
 ## [4.0.67](https://github.com/alisterd51/blog-angular/compare/v4.0.66...v4.0.67) (2024-11-07)
 
 
