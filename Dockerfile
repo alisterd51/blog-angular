@@ -1,5 +1,5 @@
 # Base image for build
-FROM node:22.13.0@sha256:fa54405993eaa6bab6b6e460f5f3e945a2e2f07942ba31c0e297a7d9c2041f62 AS build
+FROM node:22.13.1@sha256:ae2f3d4cc65d251352eca01ba668824f651a2ee4d2a37e2efb22649521a483fd AS build
 
 # Create app directory
 WORKDIR /usr/src/app
