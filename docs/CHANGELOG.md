@@ -1,3 +1,10 @@
+## [4.0.73](https://github.com/alisterd51/blog-angular/compare/v4.0.72...v4.0.73) (2025-02-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rxjs to v7.8.2 (patch) ([#722](https://github.com/alisterd51/blog-angular/issues/722)) ([bb950f4](https://github.com/alisterd51/blog-angular/commit/bb950f4b05c23e16b2eac414533985db7a84f298))
+
 ## [4.0.72](https://github.com/alisterd51/blog-angular/compare/v4.0.71...v4.0.72) (2024-11-26)
 
 
