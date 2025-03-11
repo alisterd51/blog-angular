@@ -1,3 +1,10 @@
+## [4.0.74](https://github.com/alisterd51/blog-angular/compare/v4.0.73...v4.0.74) (2025-03-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prismjs to v1.30.0 (minor) ([#733](https://github.com/alisterd51/blog-angular/issues/733)) ([48d736d](https://github.com/alisterd51/blog-angular/commit/48d736dfb744e59c2301e39e68bef1b603529d88))
+
 ## [4.0.73](https://github.com/alisterd51/blog-angular/compare/v4.0.72...v4.0.73) (2025-02-22)
 
 
