@@ -39,7 +39,7 @@
     "@cypress/schematic": "2.5.2",
     "@types/jasmine": "5.1.13",
     "angular-eslint": "18.4.3",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "jasmine-core": "5.13.0",
     "karma": "6.4.4",
     "karma-chrome-launcher": "3.2.0",
